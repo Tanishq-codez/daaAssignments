@@ -13,10 +13,10 @@ int binRec(vector<int> &v, int s, int e, int k)
         return m;
 
     else if (v[m] < k)
-        return binRec(v, s, m - 1, k);
+        return binRec(v, m + 1, e, k);
 
     else
-        return binRec(v, m + 1, e, k);
+        return binRec(v, s, m - 1, k);
 }
 
 int main()
