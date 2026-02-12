@@ -8,7 +8,7 @@ int main(){
     int N = 6;
     vector<int> startDay = {1, 2, 4, 6, 5, 8};
     vector<int> endDay = {3, 5, 6, 7, 9, 10};
-    vector<int> Q = 3; // number of tentative plans
+    int Q = 3; // number of tentative plans
     
     // Create pairs of (endDay, startDay, index) for sorting
     vector<tuple<int, int, int>> courses;
